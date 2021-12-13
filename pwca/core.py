@@ -17,12 +17,12 @@ PWCA_DATA_DIR = os.getenv(
 
 # Always load catalog list for calibration runs 
 pwca_catalog_path = PWCA_DATA_DIR / 'pwca_catalog.pickle'
-pwca_catalog = pickle.load( open( pwca_catalog_path, "rb" ) )
+pwca_catalog = pickle.load( open( pwca_catalog_path, "rb" ), encoding="latin1" )
 alert('Catalog of calibration runs stored to %s'%magenta('"pwca.pwca_catalog"'),fname='pwca.core')
 
 # Always load curated metadata for calibration runs 
 metadata_dict_path = PWCA_DATA_DIR / 'metadata_dict.pickle'
-metadata_dict = load(metadata_dict_path,allow_pickle=True)
+metadata_dict = load(str(metadata_dict_path), allow_pickle=True, encoding="latin1")
 alert('Metadata dictionary for calibration runs stored to %s'%magenta('"pwca.metadata_dict"'),fname='pwca.core')
 
 #
