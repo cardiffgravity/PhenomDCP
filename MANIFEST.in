@@ -1,0 +1,4 @@
+include LICENSE
+prune issues
+prune examples
+prune media
