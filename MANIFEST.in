@@ -1,0 +1,6 @@
+include LICENSE
+recursive-include pwca *.json *.pickle
+prune data
+prune issues
+prune examples
+prune media
