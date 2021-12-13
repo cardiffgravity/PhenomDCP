@@ -1,0 +1,21 @@
+# filetypes to ignore
+*.py[cod]
+.DS_store
+*.swp
+
+# build files/directories to ignore
+/dist/
+/build/
+/.cache/
+/*.egg-info/
+/.eggs/
+__pycache__/
+/.coverage
+.pytest_cache/
+/coverage.xml
+/junit*.xml
+/htmlcov/
+/pwca/_version.py
+
+# documentation files to ignore
+/docs/_build/
